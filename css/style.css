@@ -1,42 +1,28 @@
-/* Box Model Hack */
-* {
+*{
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+body{
+  background-color: #eff3ff;
 }
 
-.clear {
-	clear: both;
+.container {
+  width: 350px;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
-}
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
+#card {
+  background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+  width: 100%;
+  padding: 30px 20px;
+ 
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
 
 }
-
-footer {
-
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
