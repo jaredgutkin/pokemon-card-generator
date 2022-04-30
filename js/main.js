@@ -26,7 +26,35 @@ let generateCard = (data) => {
     const statDefense = data.stats[2].base_stat
     const statSpeed = data.stats[5].base_stat
 
-    card.innerHTML = ""
+    card.innerHTML = `
+        <p class="hp">
+                <span>HP</span>
+                ${hp}
+            </p>
+            <img src="${imgSrc}" alt="">
+            <h2 class="poke-name">${pokeName}</h2>
+            <div class="types">
+                <span>type 1</span>
+                <span>type 2</span>
+            </div>
+            <div class="stats">
+                <div>
+                    <h3>${statAttack}</h3>
+                    <h3>Attack</h3>
+                </div>
+                <div>
+                    <h3>${statDefense}</h3>
+                    <h3>Defense</h3>
+                </div>
+                <div>
+                    <h3>${statSpeed}</h3>
+                    <h3>Speed</h3>
+                </div>
+            </div>
+        </div>
+    
+    
+    `
 }
 
 btn.addEventListener("click", getPokeData)
