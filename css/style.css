@@ -19,10 +19,30 @@ body{
 }
 
 #card {
+  position: relative;
   background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
   width: 100%;
   padding: 30px 20px;
  
   box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+  border-radius: 10px;
 
+}
+
+#card img {
+  display: block;
+  width: 100px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.hp {
+  width: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
 }
